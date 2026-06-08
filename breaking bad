@@ -1,0 +1,155 @@
+Build a cinematic, fully animated single-page website for BREAKING BAD 
+inspired by this Game of Thrones style — same structure, same scroll 
+storytelling, same dark dramatic feel but with Breaking Bad theme.
+
+=== DESIGN STYLE ===
+- Dark background (#0a0a0a black)
+- Neon blue/green meth crystal color accents (#00e5ff, #39ff14)
+- Gold/amber text highlights like GoT but chemical-themed
+- Cinematic serif font for headings (like Cinzel or Trajan)
+- Particle effects: floating chemical molecule dots in background
+- Every section is full viewport height (100vh)
+- Smooth scroll with GSAP ScrollTrigger on every section
+
+=== NAVBAR ===
+- Top fixed navbar: "BREAKING BAD" logo left side
+- Nav links right: THE WORLD | CHARACTERS | FACTIONS
+- Gold underline separator below navbar (like GoT site)
+- Semi-transparent dark background
+
+=== SECTION 1 — HERO (like the ancient book opening) ===
+- Full screen hero with a dramatic IMAGE of a chemistry flask/beaker 
+  or a worn journal labeled "W.W." sitting on a desert table with 
+  candles, matches, and chemistry notes around it
+- Floating dust/ash particle animation in background
+- Text fades in: "A CHEMISTRY TEACHER" (small gold label above)
+- Main title: "THE BREAKING POINT" in huge serif font
+- Subtitle italic: "In the beginning, there was only one rule — 
+  don't get caught. He broke every one."
+- Two CTA buttons: [BEGIN THE JOURNEY] [EXPLORE THE WORLD]
+  (gold filled button + ghost outline button, like GoT)
+- Scroll triggers a dramatic zoom-in on the journal
+
+=== SECTION 2 — THE DESERT (like The Wall ice scene) ===
+- Full screen parallax: New Mexico desert panorama at dusk
+  Dark orange and purple sky, cracked earth, distant mountains
+- As user scrolls, camera slowly drifts forward into the desert
+- An abandoned RV appears in the distance through heat shimmer
+- CSS heat shimmer/blur wave animation on horizon
+- Text bottom left fades in:
+  Small label: "WHERE IT ALL BEGAN"
+  Big title: "THE DESERT COOK"
+  Subtitle: "Miles from nowhere. The perfect place to disappear."
+- Gold [BEGIN THE JOURNEY] button remains at bottom
+
+=== SECTION 3 — THE SUPERLAB (like Seven Kingdoms castle scene) ===
+- Full screen: underground lab illustration or dark industrial space
+  glowing blue-green, with chemistry equipment visible
+- Pop-out 3D effect: lab appears to rise out of an open notebook/map
+  (same as GoT castle rising from book pages)
+- Parallax layers: foreground equipment, mid lab floor, background 
+  glowing vats
+- Text bottom left:
+  Label: "THE EMPIRE UNDERGROUND"  
+  Title: "THE SUPERLAB"
+  Subtitle: "99.1% pure. Built in secret. 
+  Run by the most dangerous teacher alive."
+
+=== SECTION 4 — THE THRONE (like Iron Throne section) ===
+- Full screen dramatic scene: Walter White's iconic hat and 
+  sunglasses sitting on a pile of money bricks, dramatic 
+  spotlight from above, dark hall background
+- Warm amber/gold lighting, particle dust floating up
+- Text bottom left:
+  Small label: "WHEN YOU PLAY THE GAME OF POWER"
+  Big title: "THE EMPIRE"  
+  Subtitle: "You win — or you die."
+- Subtle camera zoom-in animation as section enters
+
+=== SECTION 5 — CHARACTERS (like House cards grid) ===
+- Dark section: "THE PLAYERS" heading centered in gold
+- 6 character cards in a 3x2 grid, dark bordered cards like GoT houses
+- Each card has:
+  • Circular icon/symbol at top (themed per character)
+  • Small label: their role
+  • Character name in big serif font  
+  • Location/territory label small below
+  • On HOVER: card flips or expands — shows their famous quote 
+    + 2-line description, gold glow border lights up
+
+CHARACTERS:
+1. WALTER WHITE — "The Teacher" — Symbol: Chemistry atom
+   Hover quote: "I am the one who knocks."
+   Description: "A mild-mannered chemistry teacher turned 
+   ruthless drug lord. The danger was always inside him."
+
+2. JESSE PINKMAN — "The Cook" — Symbol: Spray can / tag
+   Hover quote: "Yeah, Mr. White! Yeah, science!"
+   Description: "Street-smart, big-hearted, trapped in a 
+   world too dark for someone who just wanted to be free."
+
+3. SKYLER WHITE — "The Wife" — Symbol: Broken chain
+   Hover quote: "I am so tired of being afraid."
+   Description: "She saw the monster forming. Nobody believed 
+   her until it was far too late."
+
+4. HANK SCHRADER — "The Agent" — Symbol: DEA badge
+   Hover quote: "You're the smartest guy I ever met. 
+   And you're too stupid to see it."
+   Description: "The law personified — relentless, proud, 
+   and tragically close to the truth all along."
+
+5. SAUL GOODMAN — "The Lawyer" — Symbol: Phone/dollar sign
+   Hover quote: "Better call Saul!"
+   Description: "Every empire needs a fixer. 
+   Morally flexible. Professionally indispensable."
+
+6. GUS FRING — "The Kingpin" — Symbol: Los Pollos chicken
+   Hover quote: "I hide in plain sight, same as you."
+   Description: "Calm, meticulous, lethal. The most 
+   dangerous man in Albuquerque wore a paper hat."
+
+=== SECTION 6 — LOCATIONS (horizontal scroll strip) ===
+- Horizontal scroll section, 5 location cards side by side
+- Dark cinematic cards, each with location image, name, tagline:
+  1. WHITE RESIDENCE — "Where the lie began"
+  2. THE RV — "First lab. First sins."
+  3. LOS POLLOS HERMANOS — "The perfect front"
+  4. THE CAR WASH — "A.1A. Laundering included."
+  5. THE SUPERLAB — "The cathedral of crime"
+- Cards have parallax inner image on hover
+
+=== SECTION 7 — FAMOUS QUOTES WALL ===
+- Full black section, centered
+- Quotes appear one by one with typewriter animation:
+  "Say my name." — 3 second pause
+  "I am the danger." — 3 second pause  
+  "I did it for me. I liked it. I was good at it." — pause
+  "You're goddamn right." — stays on screen
+- Each quote in giant white serif text, fades in and out
+- Subtle chemical formula symbols float in background
+
+=== SECTION 8 — FOOTER ===
+- Dark footer, centered
+- "All empires crumble." in italic gold
+- Breaking Bad logo that slowly SHATTERS/DISSOLVES 
+  with CSS animation on scroll-enter
+- Minimal links below
+
+=== ANIMATIONS REQUIRED ===
+- GSAP + ScrollTrigger for ALL scroll animations
+- Parallax on every full-screen background image
+- Particle system (floating molecules/dots) site-wide
+- Card hover: 3D tilt effect + glow border
+- Typewriter effect on quote wall
+- Heat shimmer CSS animation on desert section
+- Fade-in-up on all text blocks when entering viewport
+- Smooth momentum scrolling throughout
+
+=== TECH STACK ===
+HTML + CSS + Vanilla JavaScript
+GSAP CDN + ScrollTrigger plugin
+No frameworks needed
+Fully responsive (mobile + desktop)
+All images use dark cinematic placeholder gradients if 
+real images unavailable
